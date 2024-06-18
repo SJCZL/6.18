@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "your-build-command",
+      "use": "@vercel/node"
+    }
+  ],
+  "functions": { ... },
+  "routes": [ ... ],
+  // Add a build step to update npm and clear cache
+  "builds": [
+    {
+      "src": "./update-npm.sh",
+      "use": "@vercel/static"
+    }
+  ]
+}
