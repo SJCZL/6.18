@@ -134,9 +134,3 @@
   "author": "",
   "license": "ISC"
 }
-{
-  "scripts": {
-    "build": "npm run prebuild && npm install",
-    "prebuild": "npm config set registry https://registry.npmjs.org/ && npm install -g npm@latest && npm cache clean --force"
-  }
-}
